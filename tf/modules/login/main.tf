@@ -30,7 +30,7 @@ resource "google_compute_instance" "login_node" {
 
   boot_disk {
     initialize_params {
-      image = "centos-cloud/centos-7"
+      image = "projects/cloud-hpc-image-public/global/images/family/hpc-centos-7"
       type  = var.boot_disk_type
       size  = var.boot_disk_size
     }

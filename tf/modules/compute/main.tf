@@ -75,7 +75,7 @@ resource "google_compute_instance" "compute_node" {
 
   boot_disk {
     initialize_params {
-      image = "centos-cloud/centos-7"
+      image = "projects/cloud-hpc-image-public/global/images/family/hpc-centos-7"
       type  = each.value.boot_disk_type
       size  = each.value.boot_disk_size
     }
