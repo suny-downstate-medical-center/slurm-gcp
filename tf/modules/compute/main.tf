@@ -75,7 +75,7 @@ resource "google_compute_instance" "compute_node" {
 
   boot_disk {
     initialize_params {
-      image = "centos-cloud/centos-7"
+      image = "https://www.googleapis.com/compute/v1/projects/ecas2-nsf1904444/global/images/centos-7-neuron-nightly-netpyne"
       type  = each.value.boot_disk_type
       size  = each.value.boot_disk_size
     }
